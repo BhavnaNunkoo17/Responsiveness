@@ -1,0 +1,136 @@
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+  --color-white: #fff;
+  --color-black: #000;
+  --color-grey: rgb(224, 224, 224);
+}
+
+.main-container {
+  height: 100vh;
+  padding: 5%;
+  background-color: var(--color-black);
+}
+
+.main-wrapper {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.header-container {
+  padding: 2%;
+  width: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 132, 89, 1) 0%,
+    rgba(224, 224, 224, 0.65625) 100%
+  );
+  align-content: center;
+  color: var(--color-white);
+}
+
+.header-quote {
+  padding: 10%;
+  font-size: 32px;
+}
+
+.header-info {
+  position: absolute;
+  bottom: 0;
+  left: 10;
+  z-index: 10;
+}
+
+.account-container {
+    background-color: var(--color-white);
+    width: 90%;
+    align-content: center;
+}
+
+.account-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 5%;
+    height: 80%;
+}
+
+.input-prompt {
+  display: flex;
+  flex-direction: column;
+  height: 25%;
+  justify-content: space-between;
+}
+
+.create-prompt {
+  font-size: 25px;
+  padding-bottom: 1%;
+}
+
+.create-account-prompt {
+  font-size: 12px;
+}
+
+.name-input,
+.email-input,
+.password-input {
+  padding: 1%;
+  border-bottom: 1px solid var(--color-grey);
+}
+
+.account-button {
+  display: flex;
+  flex-direction: column;
+}
+
+.create-button {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  padding: 2%;
+  border-radius: 5px;
+  margin-bottom: 4%;
+}
+
+.google-button {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  border: 1px solid var(--color-grey);
+  padding: 2%;
+  border-radius: 5px;
+  margin-bottom: 4%;
+}
+
+.login-prompt {
+  text-align: center;
+  font-size: 12px;
+}
+
+.create-button:hover {
+  box-shadow: 2px 2px 2px #aaaaaa;
+}
+
+.google-button:hover {
+  box-shadow: 2px 2px 2px var(--color-grey);
+}
+
+@media screen and (max-width: 500px) {
+  .header-container {
+    display: none;
+  }
+  .border-line {
+    visibility: visible;
+  }
+  .main-wrapper{
+    justify-content: center;
+  }
+  .account-container {
+    border-top: 16px solid #00ffac;
+}
+}

@@ -1,0 +1,123 @@
+*{
+    border:0;
+    margin:0;
+    padding:0;    
+    box-sizing:0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root{
+    --color-white: #fff;
+    --color-black:#000;
+    --color-grey:rgb(224, 224, 224);
+}
+
+.main-container{
+    display: flex;
+    align-items: center;
+    min-height:100vh;
+    justify-content: center;
+    background-color: var(--color-black);
+}
+
+.header-container {
+    position: relative;
+    width:40%;
+    height:600px;
+    background-image: url(backImg.jpg) ;
+    background-size: cover;
+    align-content: center;
+    color:var(--color-white);
+}
+
+.header-container::after {
+    content: "";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: linear-gradient(to bottom, rgba(0, 23, 14, 0.3875) 0%,rgba(33, 33, 33, 0.8625) 100%);
+}
+
+.header-quote {
+    padding:5%;
+    font-size: 32px;
+    z-index: 999999;
+    position: relative;
+}
+
+.header-info {
+    position:relative;
+    top:9rem;
+    padding:2rem;
+    z-index: 999999;
+}
+
+.header-name{
+    font-size: 22px;
+}
+
+.header-title{
+    font-size: 14px;
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+
+.account-container { 
+    background-color: var(--color-white);
+    width:30%;
+    height: 600px;
+}
+
+.account-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 20% 5% 5% 10% ;
+}
+
+.create-prompt {
+    font-size: 25px;
+}
+
+.create-account-prompt {
+    font-size: 12px;
+    margin: 2% 0 5% 0;
+}
+
+.name-input, .email-input, .password-input {
+    margin:5% 5% 5% 0;
+    padding: 1%;
+    border-bottom: 1px solid var(--color-grey);
+}
+
+.create-button {
+    background-color: var(--color-black);
+    color: var(--color-white);;
+    padding:2%;
+    margin: 5% ;
+    border-radius:5px;
+}
+
+.google-button {
+    background-color: var(--color-white);
+    color: var(--color-black);
+    border:1px solid var(--color-grey);
+    padding:2%;
+    margin: 0 5% 7% 5%;
+    border-radius:5px;
+}
+
+.login-prompt {
+    text-align: center;
+    font-size: 12px;
+
+}
+
+.create-button:hover {
+    box-shadow: 2px 2px 2px #aaaaaa;
+}
+
+.google-button:hover{
+    box-shadow: 2px 2px 2px var(--color-grey);
+}
